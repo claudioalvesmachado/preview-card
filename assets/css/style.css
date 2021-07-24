@@ -1,0 +1,139 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+/* COLOR PALETTE*/
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --whiteP: hsla(0, 0%, 100%, 0.75);
+    --lightGray: hsl(0, 0%, 95%);
+    --model:  'Big Shoulders Display', cursive;
+    --desc: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: var(--lightGray);
+}
+
+/* CONTAINER CONFIG */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    margin: 64px auto;
+}
+
+.car {
+    padding: 48px;
+    font-size: 2.4rem;
+}
+
+.car h1 {
+    font-size: 3.6rem;
+    font-family: var(--model);
+    color: var(--lightGray);
+    text-transform: uppercase;
+}
+
+.car p {
+    color: var(--whiteP);
+    line-height: 24px;
+}
+
+.car button {
+    border: none;
+    padding: 16px 32px;
+    border-radius: 48px;
+    background-color: var(--lightGray);
+    font-weight: 500;
+    color: #000;
+    mix-blend-mode: screen;
+    border: 2px solid var(--lightGray);
+}
+
+.car button:hover {
+    color: var(--lightGray);
+    background-color: rgba(205, 92, 92, 0);
+    transition: .3s all;
+}
+
+.sedans {
+    background-color: var(--orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.suvs {
+    background-color: var(--darkCyan);
+}
+
+.luxury {
+    background-color: var(--veryDarkCyan);
+    border-radius:  0 0 8px 8px;
+}
+
+img, h1, p, button {
+    margin: 16px 0;
+}
+
+
+/* ADAPTATION FOR LARGER SCREENS */
+@media (min-width: 1400px) {
+    .container {
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 880px;
+        margin:0;
+    }
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury {
+        border-radius:  0 8px 8px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.attribution a {
+    color: #202020;
+    text-decoration: none;
+    font-size: 1.2rem;
+} 
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+

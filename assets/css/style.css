@@ -86,7 +86,7 @@ img, h1, p, button {
 
 
 /* ADAPTATION FOR LARGER SCREENS */
-@media (min-width: 1400px) {
+@media (min-width: 960px) {
     .container {
         flex-direction: row;
         position: absolute;

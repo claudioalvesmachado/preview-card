@@ -47,6 +47,7 @@ body {
 .car p {
     color: var(--whiteP);
     line-height: 24px;
+    letter-spacing: .050rem;
 }
 
 .car button {
@@ -135,5 +136,6 @@ img, h1, p, button {
 
 .attribution a:hover {
     text-decoration: underline;
+    color: var(--darkCyan);
 }
 
